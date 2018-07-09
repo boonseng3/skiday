@@ -38,8 +38,8 @@ class SkiDayList extends Component {
                         <tr>
                             <td colSpan={4}>
                                 <Link to="/list-days" style={(!this.props.filter) ? activeFilterStyle : null}>All Days</Link>
-                                <Link to="/list-days/powder" style={(this.props.filter) && this.props.filter== "powder" ? activeFilterStyle : null}>Powder Days</Link>
-                                <Link to="/list-days/backcountry" style={(this.props.filter) && this.props.filter== "backcountry"? activeFilterStyle : null}>Backcountry Days</Link>
+                                <Link to="/list-days/powder" style={(this.props.filter) && this.props.filter=== "powder" ? activeFilterStyle : null}>Powder Days</Link>
+                                <Link to="/list-days/backcountry" style={(this.props.filter) && this.props.filter=== "backcountry"? activeFilterStyle : null}>Backcountry Days</Link>
                             </td>
                         </tr>
                     </thead>
