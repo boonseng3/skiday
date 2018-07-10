@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import GoalProgress from './../components/GoalProgress'
 
 const progress = {
-                      "current": 10,
-                      "goal": 100
-                  }
+    "current": 10,
+    "goal": 100
+}
 
 
 class GoalProgressContainer extends Component {
@@ -15,14 +15,14 @@ class GoalProgressContainer extends Component {
             goal: progress.goal
         }
     }
-    onNewGoal= (value)=>{
+    onNewGoal = (value) => {
 
-    console.log("New goal is "+value)
+        console.log("New goal is " + value)
     }
 
     render() {
         return (
-            <GoalProgress {...this.state} onNewGoal={value=> this.onNewGoal(value)}/>
+            <GoalProgress {...this.state} onNewGoal={value => this.onNewGoal(value)} />
 
         );
     }

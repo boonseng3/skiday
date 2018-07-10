@@ -16,13 +16,13 @@ class SkiDayList extends Component {
         super(props)
     }
 
-    onRemoveDay= (date) =>{
+    onRemoveDay = (date) => {
         this.props.onRemoveDay(date)
     }
     render() {
         const filteredDays = (!this.props.filter || !this.props.filter.match(/powder|backcountry/)) ?
-        this.props.days :
-        this.props.days.filter(day => day[this.props.filter])
+            this.props.days :
+            this.props.days.filter(day => day[this.props.filter])
 
         return (
             <div className="ski-day-list">
@@ -38,13 +38,13 @@ class SkiDayList extends Component {
                         <tr>
                             <td colSpan={4}>
                                 <Link to="/list-days" style={(!this.props.filter) ? activeFilterStyle : null}>All Days</Link>
-                                <Link to="/list-days/powder" style={(this.props.filter) && this.props.filter=== "powder" ? activeFilterStyle : null}>Powder Days</Link>
-                                <Link to="/list-days/backcountry" style={(this.props.filter) && this.props.filter=== "backcountry"? activeFilterStyle : null}>Backcountry Days</Link>
+                                <Link to="/list-days/powder" style={(this.props.filter) && this.props.filter === "powder" ? activeFilterStyle : null}>Powder Days</Link>
+                                <Link to="/list-days/backcountry" style={(this.props.filter) && this.props.filter === "backcountry" ? activeFilterStyle : null}>Backcountry Days</Link>
                             </td>
                         </tr>
                     </thead>
                     <tbody>
-                        { filteredDays.map((day, i) =>
+                        {filteredDays.map((day, i) =>
                             <SkiDayRow key={i} {...day} onRemoveDay={this.onRemoveDay} />
                         )}
                     </tbody>

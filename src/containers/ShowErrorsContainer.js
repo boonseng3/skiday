@@ -2,25 +2,25 @@ import React, { Component } from "react";
 import ShowErrors from './../components/ShowErrors'
 
 
-    let errors = ["Error1", "Error2", "Error3"]
+let errors = ["Error1", "Error2", "Error3"]
 
 class ShowErrorsContainer extends Component {
 
     constructor(props) {
         super(props)
-        this.state={
+        this.state = {
             errors: errors
-            }
+        }
 
     }
-    onClearError= ()=>{
+    onClearError = () => {
         console.log("Clear error")
-        this.setState( {errors: []})
+        this.setState({ errors: [] })
     }
 
     render() {
         return (
-            <ShowErrors errors={this.state.errors} onClearError={value=> this.onClearError(value)}/>
+            <ShowErrors errors={this.state.errors} onClearError={value => this.onClearError(value)} />
         );
     }
 }
