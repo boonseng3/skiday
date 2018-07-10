@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
 import Routes from './routes'
 
-import ShowErrors from "./components/ShowErrors";
-import Menu from "./components/Menu";
+import './styles/css/index.css'
+import ShowErrors from "./containers/ShowErrorsContainer";
+import Menu from "./containers/MenuContainer";
+import GoalProgress from "./containers/GoalProgressContainer";
 class App extends Component {
   render() {
     return (
-
       <div className="app">
-        <Menu />
         <ShowErrors errors={[]} />
         <Routes />
+        <GoalProgress />
+        <Menu />
 
       </div>
     );

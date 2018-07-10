@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ShowErrors from './../components/ShowErrors'
-
+import '../styles/css/ShowErrors.css'
 
 let errors = ["Error1", "Error2", "Error3"]
 

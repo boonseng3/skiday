@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import AddDayForm from './../components/AddDayForm'
 import { withRouter } from 'react-router'
+import '../styles/css/AddDayForm.css'
 
 class AddDayFormContainer extends Component {
     onNewDay = (value) => {

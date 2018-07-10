@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import SkiDayCount from './../components/SkiDayCount'
-
+import '../styles/css/SkiDayCount.css'
 const skiDayCount = {
     "total": 10,
     "powder": 1,

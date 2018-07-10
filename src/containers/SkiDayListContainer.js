@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import SkiDayList from './../components/SkiDayList'
-
+import '../styles/css/SkiDayList.css'
 const days = [{
     "resort": "Kirkwood",
     "date": "2016-12-7",

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import GoalProgress from './../components/GoalProgress'
+import '../styles/css/GoalProgress.css'
 
 const progress = {
     "current": 10,

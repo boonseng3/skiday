@@ -3,11 +3,9 @@ import { Link } from 'react-router-dom'
 import HomeIcon from 'react-icons/lib/fa/home'
 import AddDayIcon from 'react-icons/lib/fa/calendar-plus-o'
 import ListDaysIcon from 'react-icons/lib/fa/table'
+import '../styles/css/Menu.css'
 
-class Menu extends Component {
-    constructor({ props }) {
-        super(props)
-    }
+class MenuContainer extends Component {
     render() {
         return (
             <nav className="menu">
@@ -24,4 +22,4 @@ class Menu extends Component {
         );
     }
 }
-export default Menu;
+export default MenuContainer;
